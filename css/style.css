@@ -24,6 +24,7 @@ button {
 body {
   color: #ffffff;
   letter-spacing: 0.1em;
+  font-family: sans-serif;
 }
 
 .header {
