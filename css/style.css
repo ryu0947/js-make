@@ -5,6 +5,18 @@
   padding: 0;
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 ul,
 li {
   margin: 0;
@@ -22,17 +34,22 @@ button {
 }
 
 body {
-  color: #ffffff;
+  color: #333333;
   letter-spacing: 0.1em;
   font-family: sans-serif;
 }
 
 .header {
+  color: #ffffff;
   background: #333333;
   display: flex;
   align-items: center;
   height: 80px;
   padding: 10px 20px;
+}
+
+.title {
+  font-size: 16px;
 }
 
 .nav {
@@ -113,4 +130,10 @@ body {
 
 .nav-btn-item:nth-child(3).active {
   transform: translateY(-15px) rotate(-45deg);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
 }
