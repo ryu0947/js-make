@@ -9,8 +9,23 @@
   <body>
     <header class="header">
       <h1 class="title">あえてJavaScriptで作る</h1>
-      <nav id="js-nav" class="nav">
-        <p class="nav-text">ドロワー×ハンバーガーです。</p>
+      <nav class="pc-nav">
+        <ul class="pc-list">
+          <li class="pc-list-item"><a href="#tab-menu">タブメニュー</a></li>
+          <li class="pc-list-item"><a href="#modal">モーダルウィンドウ</a></li>
+          <li class="pc-list-item">
+            <a href="#accordion">アコーディオンメニュー</a>
+          </li>
+        </ul>
+      </nav>
+      <nav id="js-nav" class="sp-nav">
+        <ul class="sp-list">
+          <li class="sp-list-item"><a href="#tab-menu">タブメニュー</a></li>
+          <li class="sp-list-item"><a href="#modal">モーダルウィンドウ</a></li>
+          <li class="sp-list-item">
+            <a href="#accordion">アコーディオンメニュー</a>
+          </li>
+        </ul>
       </nav>
       <button id="js-nav-btn" class="nav-btn" type="button">
         <span class="nav-btn-item"></span>
@@ -18,17 +33,6 @@
         <span class="nav-btn-item"></span>
       </button>
     </header>
-    <nav class="page-nav">
-      <div class="container">
-        <ul class="list">
-          <li class="list-item"><a href="#tab-menu">タブメニュー</a></li>
-          <li class="list-item"><a href="#modal">モーダルウィンドウ</a></li>
-          <li class="list-item">
-            <a href="#accordion">アコーディオンメニュー</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
     <main>
       <section class="lead">
         <div class="container">
