@@ -54,7 +54,7 @@ body.mask {
 }
 
 section {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .container {
@@ -243,7 +243,7 @@ section {
   margin-top: 80px;
 }
 
-.lead-title {
+.section-title {
   margin-bottom: 20px;
 }
 
@@ -292,7 +292,7 @@ section {
     font-size: 32px;
   }
 
-  .lead-title {
+  .section-title {
     font-size: 30px;
   }
 }
