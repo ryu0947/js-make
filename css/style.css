@@ -37,7 +37,17 @@ body {
   color: #333333;
   font-size: 16px;
   letter-spacing: 0.1em;
+  line-height: 1.8;
   font-family: sans-serif;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.container {
+  padding: 0 15px;
+  text-align: center;
 }
 
 .header {
@@ -133,8 +143,24 @@ body {
   transform: translateY(-15px) rotate(-45deg);
 }
 
+.lead {
+  margin-top: 80px;
+}
+
+.lead-title {
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
   .title {
     font-size: 32px;
+  }
+
+  .lead-title {
+      font-size: 30px;
   }
 }
