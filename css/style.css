@@ -25,8 +25,8 @@ li {
 }
 
 a {
-    text-decoration: none;
-    color: #333333;
+  text-decoration: none;
+  color: #333333;
 }
 
 button {
@@ -148,6 +148,30 @@ section {
   transform: translateY(-15px) rotate(-45deg);
 }
 
+.page-nav {
+  background: #f7f7f7;
+  height: 50px;
+}
+
+.page-nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.list-item a:hover {
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
 .lead {
   margin-top: 80px;
 }
@@ -166,6 +190,6 @@ section {
   }
 
   .lead-title {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
