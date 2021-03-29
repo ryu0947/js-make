@@ -54,6 +54,10 @@ body.mask {
   z-index: 5;
 }
 
+main {
+  padding-top: 80px;
+}
+
 section {
   margin-bottom: 100px;
 }
@@ -133,12 +137,19 @@ section {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   color: #ffffff;
   background: #333333;
+}
+
+.header-inner {
   display: flex;
   align-items: center;
-  height: 80px;
-  padding: 10px 20px;
+  height: 70px;
+  padding: 15px;
 }
 
 .title {
@@ -261,6 +272,10 @@ section {
     left: 95%;
   }
 
+  .header-inner {
+    max-width: 1400px;
+  }
+
   .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -297,6 +312,7 @@ section {
     opacity: 0.6;
     text-decoration: underline;
   }
+  
   .title {
     font-size: 32px;
   }
