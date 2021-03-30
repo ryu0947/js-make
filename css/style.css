@@ -65,10 +65,15 @@ main {
 }
 
 section {
-  margin-bottom: 200px;
+  margin-bottom: 150px;
+}
+
+.section-title {
+  font-size: 24px;
 }
 
 .container {
+  position: relative;
   padding: 0 15px;
   text-align: center;
 }
@@ -166,8 +171,14 @@ section {
   padding: 15px 20px;
 }
 
-.title {
+.main-title,
+.lead-title {
   font-size: 20px;
+}
+
+.section-title,
+.lead-title {
+  margin-bottom: 24px;
 }
 
 .sp-nav {
@@ -277,16 +288,6 @@ section {
   margin-top: 80px;
 }
 
-.section-title {
-  margin-bottom: 20px;
-}
-
-.slider {
-  position: relative;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
 .nav {
   display: none;
 }
@@ -314,6 +315,39 @@ section {
   margin: 0;
 }
 
+.tab-list {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-item {
+  background: #ffffff;
+  color: #333333;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.tab-item.active {
+  background: #333333;
+  color: #ffffff;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-inner {
+  display: none;
+  background: #333333;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.tab-inner.active {
+  display: block;
+}
+
+.tab-text {
+  text-align: justify;
+}
+
 @media screen and (min-width: 769px) {
   .top-btn {
     left: 95%;
@@ -324,7 +358,7 @@ section {
   }
 
   .container {
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 0;
   }
@@ -361,12 +395,14 @@ section {
     text-decoration: underline;
   }
 
-  .title {
+  .main-title,
+  .lead-title {
     font-size: 32px;
   }
 
   .section-title {
-    font-size: 30px;
+    font-size: 42px;
+    margin-bottom: 30px;
   }
 
   .nav {
