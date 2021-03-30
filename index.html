@@ -48,7 +48,7 @@
       <section id="lead" class="lead">
         <div class="container">
           <h2 class="lead-title">
-            Webサイトによくある機能を<br>JavaScriptだけで実装。
+            Webサイトによくある機能を<br />JavaScriptだけで実装。
           </h2>
           <p class="lead-text">
             普段はjQueryやプラグインで実装している機能をJavaScriptのみで作ってみました。
@@ -89,9 +89,21 @@
         <div class="container">
           <h2 class="section-title">タブメニュー</h2>
           <ul class="tab-list">
-            <li data-id="summary" class="tab-item active">概要</li>
-            <li data-id="service" class="tab-item">サービス</li>
-            <li data-id="contact" class="tab-item">お問い合わせ</li>
+            <li>
+              <a data-id="summary" class="tab-item active" href="#" role="tab"
+                >概要</a
+              >
+            </li>
+            <li>
+              <a data-id="service" class="tab-item" href="#" role="tab"
+                >サービス</a
+              >
+            </li>
+            <li>
+              <a data-id="contact" class="tab-item" href="#" role="tab"
+                >お問い合わせ</a
+              >
+            </li>
           </ul>
           <div id="summary" class="tab-inner active">
             <p class="tab-text">
