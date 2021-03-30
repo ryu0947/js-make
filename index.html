@@ -12,7 +12,7 @@
     </div>
     <header class="header">
       <div class="header-inner">
-        <h1 class="title">JavaScriptで作る</h1>
+        <h1 class="main-title">JavaScriptで作る</h1>
         <nav class="pc-nav">
           <ul class="pc-list">
             <li class="pc-list-item"><a href="#slider">スライダー</a></li>
@@ -47,8 +47,8 @@
     <main>
       <section id="lead" class="lead">
         <div class="container">
-          <h2 class="section-title">
-            Webサイトによくある機能をJavaScriptだけで実装。
+          <h2 class="lead-title">
+            Webサイトによくある機能を<br>JavaScriptだけで実装。
           </h2>
           <p class="lead-text">
             普段はjQueryやプラグインで実装している機能をJavaScriptのみで作ってみました。
@@ -60,17 +60,15 @@
       <section id="slider">
         <div class="container">
           <h2 class="section-title">スライダー</h2>
-          <div class="slider">
-            <img alt="黒猫の写真" id="slide-img" />
-            <nav class="nav">
-              <button id="next" class="arrow-nav next" type="button">
-                <img src="img/right-arrow.png" alt="次へ" class="arrow-img" />
-              </button>
-              <button id="prev" class="arrow-nav prev" type="button">
-                <img src="img/left-arrow.png" alt="前へ" class="arrow-img" />
-              </button>
-            </nav>
-          </div>
+          <img alt="黒猫の写真" id="slide-img" />
+          <nav class="nav">
+            <button id="next" class="arrow-nav next" type="button">
+              <img src="img/right-arrow.png" alt="次へ" class="arrow-img" />
+            </button>
+            <button id="prev" class="arrow-nav prev" type="button">
+              <img src="img/left-arrow.png" alt="前へ" class="arrow-img" />
+            </button>
+          </nav>
           <ul class="indicator">
             <li class="indicator-item current"></li>
             <li class="indicator-item"></li>
@@ -78,8 +76,51 @@
             <li class="indicator-item"></li>
             <li class="indicator-item"></li>
           </ul>
+          <a
+            class="github-link"
+            href="https://github.com/ryu0947/slider"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHubのコードを見る</a
+          >
         </div>
-        <a class="github-link" href="https://github.com/ryu0947/slider" target="_blank" rel="noopener noreferrer">GitHubのコードを見る</a>
+      </section>
+      <section id="tab">
+        <div class="container">
+          <h2 class="section-title">タブメニュー</h2>
+          <ul class="tab-list">
+            <li data-id="summary" class="tab-item active">概要</li>
+            <li data-id="service" class="tab-item">サービス</li>
+            <li data-id="contact" class="tab-item">お問い合わせ</li>
+          </ul>
+          <div id="summary" class="tab-inner active">
+            <p class="tab-text">
+              概要概要概要概要概要概要概要概要概要概要
+              概要概要概要概要概要概要概要概要概要概要
+              概要概要概要概要概要概要概要概要概要概要
+              概要概要概要概要概要概要概要概要概要概要
+              概要概要概要概要概要概要概要概要概要概要
+            </p>
+          </div>
+          <div id="service" class="tab-inner">
+            <p class="tab-text">
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+            </p>
+          </div>
+          <div id="contact" class="tab-inner">
+            <p class="tab-text">
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+            </p>
+          </div>
+        </div>
       </section>
       <button id="js-top-btn" class="top-btn" type="button">
         <div class="arrow">
@@ -91,5 +132,6 @@
     <script src="js/top-btn.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/tab-menu.js"></script>
   </body>
 </html>
