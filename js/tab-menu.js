@@ -4,7 +4,9 @@ const tabItems = document.querySelectorAll(".tab-item");
 const tabInners = document.querySelectorAll(".tab-inner");
 
 tabItems.forEach((clickItem) => {
-  clickItem.addEventListener("click", () => {
+  clickItem.addEventListener("click", (e) => {
+    e.preventDefault();
+
     tabItems.forEach((tabItem) => {
       tabItem.classList.remove("active");
     });
