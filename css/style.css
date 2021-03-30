@@ -277,46 +277,12 @@ section {
 
 .slider {
   position: relative;
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  bottom: 50%;
-}
-
-.arrow-nav {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  user-select: none;
-}
-
-.next {
-  left: 52%;
-}
-
-.prev {
-  right: 52%;
-}
-
-.arrow-img {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: none;
 }
 
 .indicator {
@@ -395,5 +361,43 @@ section {
 
   .section-title {
     font-size: 30px;
+  }
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+  }
+  
+  .arrow-nav {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .next {
+    left: 52%;
+  }
+  
+  .prev {
+    right: 52%;
+  }
+  
+  .arrow-img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
