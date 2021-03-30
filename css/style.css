@@ -31,6 +31,7 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
   border: none;
   vertical-align: bottom;
 }
@@ -81,7 +82,7 @@ section {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 998;
 }
 
 .loading-icon {
@@ -99,7 +100,7 @@ section {
   bottom: 0;
   left: 0;
   margin: auto;
-  z-index: 6;
+  z-index: 999;
 }
 
 @keyframes loaderAnime {
@@ -149,12 +150,13 @@ section {
   width: 100%;
   color: #ffffff;
   background: #333333;
+  z-index: 10;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
-  height: 70px;
+  height: 50px;
   padding: 15px;
 }
 
@@ -275,6 +277,8 @@ section {
 
 .slider {
   position: relative;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .nav {
@@ -350,6 +354,7 @@ section {
   .container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .sp-nav {
@@ -383,7 +388,7 @@ section {
     opacity: 0.6;
     text-decoration: underline;
   }
-  
+
   .title {
     font-size: 32px;
   }
