@@ -438,11 +438,11 @@ section {
 }
 
 .accordion-line.active:nth-child(1) {
-  transform: rotate(90deg);
+  opacity: 0;
 }
 
 .accordion-line.active:nth-child(2) {
-  opacity: 0;
+  transform: rotate(90deg);
 }
 
 .accordion-list,
@@ -464,7 +464,7 @@ section {
 }
 
 .accordion-list-js.open {
-  height: 275px;
+  height: 295px;
   opacity: 1;
   visibility: visible;
 }
