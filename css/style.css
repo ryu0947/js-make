@@ -408,12 +408,41 @@ section {
 }
 
 .accordion-btn {
+  position: relative;
   width: 100%;
   text-align: left;
   color: #ffffff;
   background: #000000;
   padding: 15px 25px;
   border-bottom: 1px solid #ffffff;
+}
+
+.accordion-btn span {
+  position: absolute;
+  background: #ffffff;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.accordion-line:nth-child(1) {
+  top: 50%;
+  right: 44px;
+  width: 16px;
+  height: 4px;
+}
+
+.accordion-line:nth-child(2) {
+  top: 39%;
+  right: 50px;
+  width: 4px;
+  height: 16px;
+}
+
+.accordion-line.active:nth-child(1) {
+  transform: rotate(90deg);
+}
+
+.accordion-line.active:nth-child(2) {
+  opacity: 0;
 }
 
 .accordion-list,
