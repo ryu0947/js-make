@@ -57,7 +57,7 @@
           </p>
         </div>
       </section>
-      <section id="slider">
+      <section id="slider-link">
         <div class="container">
           <h2 class="section-title">スライダー</h2>
           <img alt="黒猫の写真" id="slide-img" />
@@ -85,7 +85,7 @@
           >
         </div>
       </section>
-      <section id="tab">
+      <section id="tab-link">
         <div class="container">
           <h2 class="section-title">タブメニュー</h2>
           <ul class="tab-list">
@@ -141,7 +141,7 @@
           >GitHubのコードはこちら</a
         >
       </section>
-      <section id="modal">
+      <section id="modal-link">
         <div class="container">
           <h2 class="section-title">モーダル</h2>
           <div id="js-modal" class="modal">
@@ -162,12 +162,46 @@
           </button>
         </div>
         <a
-            class="github-link"
-            href="https://github.com/ryu0947/modal"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHubのコードはこちら</a
-          >
+          class="github-link"
+          href="https://github.com/ryu0947/modal"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHubのコードはこちら</a
+        >
+      </section>
+      <section id="accordion-link">
+        <div class="container">
+          <button data-id="js-button1" class="accordion-btn" type="button">
+            アコーディオン1(クリック！)
+          </button>
+          <ul id="js-button1" class="accordion-list-js">
+            <li class="accordion-item">アコーディオン1</li>
+            <li class="accordion-item">アコーディオン2</li>
+            <li class="accordion-item">アコーディオン3</li>
+            <li class="accordion-item">アコーディオン4</li>
+            <li class="accordion-item">アコーディオン5</li>
+          </ul>
+          <button data-id="js-button2" class="accordion-btn" type="button">
+            アコーディオン2(クリック！)
+          </button>
+          <ul id="js-button2" class="accordion-list-js">
+            <li class="accordion-item">アコーディオン1</li>
+            <li class="accordion-item">アコーディオン2</li>
+            <li class="accordion-item">アコーディオン3</li>
+            <li class="accordion-item">アコーディオン4</li>
+            <li class="accordion-item">アコーディオン5</li>
+          </ul>
+          <button data-id="js-button3" class="accordion-btn" type="button">
+            アコーディオン3(クリック！)
+          </button>
+          <ul id="js-button3" class="accordion-list-js">
+            <li class="accordion-item">アコーディオン1</li>
+            <li class="accordion-item">アコーディオン2</li>
+            <li class="accordion-item">アコーディオン3</li>
+            <li class="accordion-item">アコーディオン4</li>
+            <li class="accordion-item">アコーディオン5</li>
+          </ul>
+        </div>
       </section>
       <button id="js-top-btn" class="top-btn" type="button">
         <div class="arrow">
@@ -181,5 +215,6 @@
     <script src="js/slider.js"></script>
     <script src="js/tab-menu.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/accordion-menu.js"></script>
   </body>
 </html>
