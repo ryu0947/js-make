@@ -474,6 +474,12 @@ section {
   border-bottom: 1px solid #afaeae;
 }
 
+.footer {
+  background: #333333;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
 @media screen and (min-width: 769px) {
   .top-btn {
     left: 95%;
