@@ -407,6 +407,43 @@ section {
   padding: 20px 50px;
 }
 
+.accordion-btn {
+  width: 100%;
+  text-align: left;
+  color: #ffffff;
+  background: #000000;
+  padding: 15px 25px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.accordion-list,
+.accordion-list-js {
+  background: #f7f7f7;
+  color: #333333;
+}
+
+.accordion-list {
+  display: none;
+}
+
+.accordion-list-js {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.accordion-list-js.open {
+  height: 275px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.accordion-item {
+  padding: 15px 25px;
+  border-bottom: 1px solid #afaeae;
+}
 
 @media screen and (min-width: 769px) {
   .top-btn {
