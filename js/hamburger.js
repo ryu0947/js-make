@@ -1,6 +1,6 @@
 const nav = document.getElementById("js-nav");
 const navBtn = document.getElementById("js-nav-btn");
-const navrBtnItems = document.querySelectorAll(".nav-btn-item");
+const navBtnItems = document.querySelectorAll(".nav-btn-item");
 const body = document.body;
 
 function scrollFixed() {
@@ -17,10 +17,11 @@ function scrollFixed() {
 }
 
 navBtn.addEventListener("click", () => {
-  navrBtnItems.forEach((navrBtnItem) => {
+  navBtnItems.forEach((navrBtnItem) => {
     navrBtnItem.classList.toggle("active");
   });
   nav.classList.toggle("show");
   body.classList.toggle("mask");
+  navBtn.classList.toggle("active");
   scrollFixed();
 });
