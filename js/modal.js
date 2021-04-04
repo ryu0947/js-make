@@ -5,7 +5,6 @@
   const closeBtn = document.getElementById("js-close");
   const body = document.body;
   let scrollPos = 0;
-  let checked = false;
 
   openBtn.addEventListener("click", () => {
     modal.classList.add("show");
