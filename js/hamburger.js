@@ -10,19 +10,19 @@
   function scrollFixed() {
     if (nav.classList.contains("show")) {
       if (body.style.top) {
-        const scrollY = body.style.top;
+        const bodyTop = body.style.top;
         body.style.position = "fixed";
-        body.style.top = `-${scrollY}px`;
+        body.style.top = `-${bodyTop}px`;
         return;
       }
       const scrollY = window.pageYOffset;
       body.style.position = "fixed";
       body.style.top = `-${scrollY}px`;
     } else {
-      const scrollY = body.style.top;
+      const bodyTop = body.style.top;
       body.style.position = "";
       body.style.top = "";
-      window.scrollTo(0, parseInt(scrollY || "0") * -1);
+      window.scrollTo(0, parseInt(bodyTop || "0") * -1);
     }
   }
 

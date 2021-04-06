@@ -8,8 +8,7 @@
 
   openBtn.addEventListener("click", () => {
     modal.classList.add("show");
-    const scrollY = window.pageYOffset;
-    scrollPos = scrollY;
+    scrollPos = window.pageYOffset;
     body.style.position = "fixed";
     body.style.top = `-${scrollY}px`;
   });
