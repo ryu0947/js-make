@@ -437,25 +437,25 @@ section {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.accordion-line:nth-child(1) {
+.accordion-icon:nth-child(1) {
   top: 50%;
   right: 44px;
   width: 16px;
   height: 4px;
 }
 
-.accordion-line:nth-child(2) {
+.accordion-icon:nth-child(2) {
   top: 39%;
   right: 50px;
   width: 4px;
   height: 16px;
 }
 
-.accordion-line.active:nth-child(1) {
+.accordion-icon.active:nth-child(1) {
   opacity: 0;
 }
 
-.accordion-line.active:nth-child(2) {
+.accordion-icon.active:nth-child(2) {
   transform: rotate(90deg);
 }
 
