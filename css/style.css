@@ -499,10 +499,6 @@ section {
     left: 95%;
   }
 
-  .header-inner {
-    max-width: 1400px;
-  }
-
   .container {
     max-width: 800px;
     margin: 0 auto;
