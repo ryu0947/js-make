@@ -6,8 +6,6 @@
   const navBtnItems = document.querySelectorAll(".nav-btn-item");
   const mask = document.getElementById("js-mask");
   const modal = document.getElementById("js-modal");
-  const openBtn = document.getElementById("js-open");
-  const closeBtn = document.getElementById("js-close");
   const body = document.body;
   const header = document.getElementById("js-header");
 

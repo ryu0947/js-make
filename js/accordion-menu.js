@@ -1,14 +1,14 @@
 "use strict";
 {
   const accordionBtn = document.querySelectorAll(".accordion-btn");
-  const accordionLine = document.querySelectorAll(".accordion-line");
+  const accordionIcon = document.querySelectorAll(".accordion-icon");
 
   accordionBtn.forEach((clickBtn) => {
     clickBtn.addEventListener("click", () => {
       document.getElementById(clickBtn.dataset.btn).classList.toggle("open");
 
-      accordionLine.forEach((clickLine) => {
-        if (clickLine.classList.contains(clickBtn.dataset.line)) {
+      accordionIcon.forEach((clickLine) => {
+        if (clickLine.classList.contains(clickBtn.dataset.icon)) {
           clickLine.classList.toggle("active");
         }
       });
