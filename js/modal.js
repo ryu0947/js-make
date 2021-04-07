@@ -10,7 +10,7 @@
     modal.classList.add("show");
     scrollPos = window.pageYOffset;
     body.style.position = "fixed";
-    body.style.top = `-${scrollY}px`;
+    body.style.top = `-${scrollPos}px`;
   });
 
   closeBtn.addEventListener("click", () => {
