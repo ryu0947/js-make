@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://ryu0947.github.io/js-make/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Webサイトによくある機能をJavaScriptだけで作る" />
+    <meta
+      property="og:description"
+      content="普段はjQueryやプラグインで実装している機能をJavaScriptのみで作ってみました。"
+    />
+    <meta
+      property="og:image"
+      content="https://ryu0947.github.io/js-make/img/js-make-ogp.png"
+    />
+    <!-- Twitter OGP設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ryu0947" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>JavaScriptで作る</title>
+    <script src="js/loading-animation.js" defer></script>
+    <script src="js/hamburger.js" defer></script>
+    <script src="js/smoothscroll.js" defer></script>
+    <script src="js/page-links.js" defer></script>
+    <script src="js/top-btn.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/tab-menu.js" defer></script>
+    <script src="js/modal.js" defer></script>
+    <script src="js/accordion-menu.js" defer></script>
+  </head>
+  <body>
+    <div id="js-loading" class="loading">
+      <div class="loading-icon"></div>
+    </div>
+    <header id="js-header" class="header">
+      <div class="header-inner">
+        <h1 class="main-title">JavaScriptで作る</h1>
+        <nav class="pc-nav">
+          <ul class="pc-list">
+            <li class="pc-list-item"><a href="#slider-link">スライダー</a></li>
+            <li class="pc-list-item"><a href="#tab-link">タブメニュー</a></li>
+            <li class="pc-list-item">
+              <a href="#modal-link">モーダルウィンドウ</a>
+            </li>
+            <li class="pc-list-item">
+              <a href="#accordion-link">アコーディオンメニュー</a>
+            </li>
+          </ul>
+        </nav>
+        <nav id="js-nav" class="sp-nav">
+          <ul class="sp-list">
+            <li class="sp-list-item"><a href="#slider-link">スライダー</a></li>
+            <li class="sp-list-item"><a href="#tab-link">タブメニュー</a></li>
+            <li class="sp-list-item">
+              <a href="#modal-link">モーダルウィンドウ</a>
+            </li>
+            <li class="sp-list-item">
+              <a href="#accordion-link">アコーディオンメニュー</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="js-nav-btn" class="nav-btn" type="button">
+          <span class="nav-btn-item"></span>
+          <span class="nav-btn-item"></span>
+          <span class="nav-btn-item"></span>
+        </button>
+      </div>
+    </header>
+    <div id="js-mask" class="mask"></div>
+    <main>
+      <section id="lead" class="lead">
+        <div class="container">
+          <h2 class="lead-title">
+            Webサイトによくある機能を<br />JavaScriptだけで実装。
+          </h2>
+          <p class="lead-text">
+            普段はjQueryやプラグインで実装している機能をJavaScriptのみで作ってみました。
+            ローディングアニメーション・ハンバーガー(ドロワー)ーメニュー・タブメニュー・アコーディオンメニュー・TOPへ戻るボタン・モーダルウィンドウ・スライダー・ページ内リンクの
+            8つを作りました。まとめとしてGitHubのコードとともに掲載しましたので見ていただけるととてもうれしいです。
+          </p>
+        </div>
+      </section>
+      <section id="slider-link">
+        <div class="container">
+          <h2 class="section-title">スライダー</h2>
+          <img alt="黒猫の写真" id="slide-img" />
+          <nav class="nav">
+            <button id="next" class="arrow-nav next" type="button">
+              <img src="img/right-arrow.png" alt="次へ" class="arrow-img" />
+            </button>
+            <button id="prev" class="arrow-nav prev" type="button">
+              <img src="img/left-arrow.png" alt="前へ" class="arrow-img" />
+            </button>
+          </nav>
+          <ul class="indicator">
+            <li class="indicator-item current"></li>
+            <li class="indicator-item"></li>
+            <li class="indicator-item"></li>
+            <li class="indicator-item"></li>
+            <li class="indicator-item"></li>
+          </ul>
+          <a
+            class="github-link"
+            href="https://github.com/ryu0947/js-make/blob/js-make/js/slider.js"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHubのコードはこちら</a
+          >
+        </div>
+      </section>
+      <section id="tab-link">
+        <div class="container">
+          <h2 class="section-title">タブメニュー</h2>
+          <ul class="tab-list">
+            <li>
+              <a data-id="summary" class="tab-item active" href="#" role="tab"
+                >概要</a
+              >
+            </li>
+            <li>
+              <a data-id="service" class="tab-item" href="#" role="tab"
+                >サービス</a
+              >
+            </li>
+            <li>
+              <a data-id="contact" class="tab-item" href="#" role="tab"
+                >お問い合わせ</a
+              >
+            </li>
+          </ul>
+          <div id="summary" class="tab-inner active">
+            <p class="tab-text">
+              概要概要概要概要概要概要概要概要概要概要
+              概要概要概要概要概要概要概要概要概要概要
+              概要概要概要概要概要概要概要概要概要概要
+              概要概要概要概要概要概要概要概要概要概要
+              概要概要概要概要概要概要概要概要概要概要
+            </p>
+          </div>
+          <div id="service" class="tab-inner">
+            <p class="tab-text">
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+              サービスサービスサービスサービスサービスサービスサービスサービスサービスサービス
+            </p>
+          </div>
+          <div id="contact" class="tab-inner">
+            <p class="tab-text">
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+              お問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせお問い合わせ
+            </p>
+          </div>
+        </div>
+        <a
+          class="github-link"
+          href="https://github.com/ryu0947/js-make/blob/js-make/js/tab-menu.js"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHubのコードはこちら</a
+        >
+      </section>
+      <section id="modal-link">
+        <div class="container">
+          <h2 class="section-title">モーダル</h2>
+          <div id="js-modal" class="modal">
+            <div class="modal-container">
+              <div class="modal-inner">
+                <h3 class="modal-title">モーダルです。</h3>
+                <p class="modal-text">
+                  テキストテキストテキストテキストテキスト
+                </p>
+                <button id="js-close" class="modal-close" type="button">
+                  閉じる
+                </button>
+              </div>
+            </div>
+          </div>
+          <button id="js-open" class="modal-open" type="button">
+            モーダルを開く
+          </button>
+        </div>
+        <a
+          class="github-link"
+          href="https://github.com/ryu0947/js-make/blob/js-make/js/modal.js"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHubのコードはこちら</a
+        >
+      </section>
+      <section id="accordion-link">
+        <div class="container">
+          <h2 class="section-title">アコーディオンメニュー</h2>
+          <button
+            data-btn="js-button1"
+            data-icon="js-icon1"
+            class="accordion-btn"
+            type="button"
+          >
+            アコーディオン1(クリック！)
+            <span class="accordion-icon js-icon1"></span>
+            <span class="accordion-icon js-icon1"></span>
+          </button>
+          <ul id="js-button1" class="accordion-list-js">
+            <li class="accordion-item">アコーディオン1</li>
+            <li class="accordion-item">アコーディオン2</li>
+            <li class="accordion-item">アコーディオン3</li>
+            <li class="accordion-item">アコーディオン4</li>
+            <li class="accordion-item">アコーディオン5</li>
+          </ul>
+          <button
+            data-btn="js-button2"
+            data-icon="js-icon2"
+            class="accordion-btn"
+            type="button"
+          >
+            アコーディオン2(クリック！)
+            <span class="accordion-icon js-icon2"></span>
+            <span class="accordion-icon js-icon2"></span>
+          </button>
+          <ul id="js-button2" class="accordion-list-js">
+            <li class="accordion-item">アコーディオン1</li>
+            <li class="accordion-item">アコーディオン2</li>
+            <li class="accordion-item">アコーディオン3</li>
+            <li class="accordion-item">アコーディオン4</li>
+            <li class="accordion-item">アコーディオン5</li>
+          </ul>
+          <button
+            data-btn="js-button3"
+            data-icon="js-icon3"
+            class="accordion-btn"
+            type="button"
+          >
+            アコーディオン3(クリック！)
+            <span class="accordion-icon js-icon3"></span>
+            <span class="accordion-icon js-icon3"></span>
+          </button>
+          <ul id="js-button3" class="accordion-list-js">
+            <li class="accordion-item">アコーディオン1</li>
+            <li class="accordion-item">アコーディオン2</li>
+            <li class="accordion-item">アコーディオン3</li>
+            <li class="accordion-item">アコーディオン4</li>
+            <li class="accordion-item">アコーディオン5</li>
+          </ul>
+          <a
+            class="github-link"
+            href="https://github.com/ryu0947/js-make/blob/js-make/js/accordion-menu.js"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHubのコードはこちら</a
+          >
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <h2 class="section-title">その他</h2>
+          <p class="other-text">
+            コンテンツに掲載出来なかった機能のコードのGitHubのリンクを掲載しております。
+          </p>
+          <a
+            class="github-link"
+            href="https://github.com/ryu0947/js-make/blob/js-make/js/loading-animation.js"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ローディングアニメーションのコードはこちら</a
+          >
+          <a
+            class="github-link"
+            href="https://github.com/ryu0947/js-make/blob/js-make/js/hamburger.js"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ハンバーガーメニューのコードはこちら</a
+          >
+          <a
+            class="github-link"
+            href="https://github.com/ryu0947/js-make/blob/js-make/js/smooth.js"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ページ内リンクのコードはこちら</a
+          >
+          <a
+            class="github-link"
+            href="https://github.com/ryu0947/js-make/blob/js-make/js/top-btn.js"
+            target="_blank"
+            rel="noopener noreferrer"
+            >TOPへ戻るボタンのコードはこちら</a
+          >
+        </div>
+      </section>
+      <button id="js-top-btn" class="top-btn" type="button">
+        <div class="arrow">
+          <img src="img/arrow.png" alt="" width="25" height="25" />
+        </div>
+      </button>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <small>&copy;JavaScriptで作る</small>
+      </div>
+    </footer>
+  </body>
+</html>
