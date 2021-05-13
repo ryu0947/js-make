@@ -40,7 +40,7 @@
       const targetRectTop = targetId.getBoundingClientRect().top;
       const headerHeight = header.offsetHeight;
       const calcElementPosition =
-      targetRectTop + window.pageYOffset - headerHeight;
+        targetRectTop + window.pageYOffset - headerHeight;
       window.scrollTo({
         top: calcElementPosition,
         left: 0,
