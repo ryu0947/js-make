@@ -36,11 +36,11 @@
       closeDrawerMenu();
       closeModalMenu();
       const href = a.getAttribute("href");
-      const getTargetId = document.getElementById(href.replace("#", ""));
-      const getElementPosition = getTargetId.getBoundingClientRect().top;
+      const targetId = document.getElementById(href.replace("#", ""));
+      const targetRectTop = targetId.getBoundingClientRect().top;
       const headerHeight = header.offsetHeight;
       const calcElementPosition =
-        getElementPosition + window.pageYOffset - headerHeight;
+      targetRectTop + window.pageYOffset - headerHeight;
       window.scrollTo({
         top: calcElementPosition,
         left: 0,
